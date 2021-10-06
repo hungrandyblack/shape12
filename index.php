@@ -1,0 +1,21 @@
+<?php
+include_once ("shape.php");
+include_once ("circle.php");
+include_once ("cylinder.php");
+include_once ("Rectangle.php");
+use shape\Shape;
+use circle\Circle;
+use rectangle\Rectangle;
+use cylinder\Cylinder;
+$objRectangle = new Rectangle("hình chữ nhật",15,20);
+$objhinhvuong = new Rectangle("hình chữ nhật",20,20);
+$objcircle = new Circle("hình tròn",15,20);
+$objcylinder = new Cylinder("hình trụ",15,20);
+$obj = [];
+$obj[] = $objRectangle;
+$obj[] = $objhinhvuong;
+$obj[] = $objcircle;
+$obj[] = $objcylinder;
+echo "<pre>";
+print_r($obj);
+echo "</pre>";
